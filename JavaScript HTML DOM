@@ -19,12 +19,12 @@ c) getAttribute
 d) getAttributeNode
 e) Attributes
 
-6) DOM Set Methods:
+5) DOM Set Methods:
 a) innerText
 b) innerHTML
 c) setAttrribute
 d) Attrribute 
-e) removeAtrribute
+e) removeAttribute
 
-5) Adding Events Handlers
+6) Adding Events Handlers
 - document.getElementById(id).onclick = function(){code}
