@@ -1,0 +1,16 @@
+1) DOM (Document Object Model)
+- With the HTML DOM, JavaScript can access and change all the elements of an HTML document.
+- The HTML DOM is a standard for how to get, change, add, or delete HTML elements.
+
+2) Finding HTML Elements:
+a) document.getElementById(id)
+b) document.getElementsByClassName(name)
+c) document.getElementsByClassName(name)
+
+3) Changing HTML Elements
+a) element.innerHTML =  new html content
+b) element.attribute = new value
+c) element.style.property = new style
+
+4) Adding Events Handlers
+- document.getElementById(id).onclick = function(){code}
