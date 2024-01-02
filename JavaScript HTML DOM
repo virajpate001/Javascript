@@ -12,5 +12,12 @@ a) element.innerHTML =  new html content
 b) element.attribute = new value
 c) element.style.property = new style
 
-4) Adding Events Handlers
+4) DOM Get Methods:
+a) innerHTML 
+b) innerText
+c) getAttribute
+d) getAttributeNode
+e) Attributes
+
+5) Adding Events Handlers
 - document.getElementById(id).onclick = function(){code}
