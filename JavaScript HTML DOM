@@ -28,3 +28,8 @@ e) removeAttribute
 
 6) Adding Events Handlers
 - document.getElementById(id).onclick = function(){code}
+
+7) DOM QuerySelector() & QuerySelectorAll() 
+- document.querySelector(#id);
+- document.querySelectorAll(#id);
+- in both differnce is "querySelector" is target only first element & "querySelectorAll" target all available elements. 
