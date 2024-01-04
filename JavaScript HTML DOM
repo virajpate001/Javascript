@@ -45,3 +45,22 @@ c) classList
 e.g. document.querySelector("#test").classList = "viraj";
      document.querySelector("#test").classList.add("xyz");
      document.querySelector("#test").classList.remove("xyz");
+
+9) addEventListener()
+e.g: 1) first method 
+         document.querySelector("#test").onclick = abc;
+         function abc(){
+         document.querySelector(".para").style.color = "#fff";
+          }
+
+      2) second Method 
+        e.g: 
+        - document.querySelector("#test").addEventListener("click",abc);
+         function abc(){
+         document.querySelector(".para").style.color = "#fff";
+         }
+        -  document.querySelector("#test").addEventListener("mouseenter",function(){
+           document.querySelector(".para").style.color = "#fff";
+           });
+
+  
