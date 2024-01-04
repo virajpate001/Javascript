@@ -33,3 +33,15 @@ e) removeAttribute
 - document.querySelector(#id);
 - document.querySelectorAll(#id);
 - in both differnce is "querySelector" is target only first element & "querySelectorAll" target all available elements. 
+
+8) Css Styling Method 
+a) Style 
+e.g : document.querySelector("#test").style.backgroundColor = "#000";
+
+b) className
+e.g. document.querySelector("#test").className = "viraj";
+
+c) classList 
+e.g. document.querySelector("#test").classList = "viraj";
+     document.querySelector("#test").classList.add("xyz");
+     document.querySelector("#test").classList.remove("xyz");
