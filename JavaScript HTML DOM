@@ -45,6 +45,9 @@ c) classList
 e.g. document.querySelector("#test").classList = "viraj";
      document.querySelector("#test").classList.add("xyz");
      document.querySelector("#test").classList.remove("xyz");
+     document.querySelector("#test").classList.toggle("xyz");
+     document.querySelector("#test").classList.contains("abc"); // check class is available or not 
+     
 
 9) addEventListener()
 e.g: 1) first method 
