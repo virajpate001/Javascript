@@ -66,4 +66,20 @@ e.g: 1) first method
            document.querySelector(".para").style.color = "#fff";
            });
 
-  
+  10) Traversal Method
+   A) ParentElement & ParentNode Method
+   - target to parent of selected id or class. both are same.
+     e.g: document.querySelector("#test").parentElement.style.background = "red";
+       document.querySelector("#test").parentNode.style.background = "red";
+
+   B) Children & ChildNodes Methods 
+   - children target only tags. & childNodes target spaces,comment, text. 
+     document.querySelector("#test").children[0].style.color = "red";
+     document.querySelector("#test").childNodes[0].style.color = "red";
+
+  C) FirstChild & LastChild Method .
+ - firstElementChild :- document.querySelector("#test").firstElementChild.style.color = "red"
+   firstChild : document.querySelector("#test").firstChild.style.color = "red";
+   lastElementChild : document.querySelector("#test").lastElementChild.style.color = "red"
+   lastChild : document.querySelector("#test").lastChild.style.color = "red"
+       
