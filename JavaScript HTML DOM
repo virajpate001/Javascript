@@ -82,4 +82,9 @@ e.g: 1) first method
    firstChild : document.querySelector("#test").firstChild.style.color = "red";
    lastElementChild : document.querySelector("#test").lastElementChild.style.color = "red"
    lastChild : document.querySelector("#test").lastChild.style.color = "red"
-       
+
+ D) nextElementSibling & previousElementSibling 
+ - nextElementSibling :- document.querySelector("#test").nextElementSibling.style.color = "red"
+ - nextSibling :- document.querySelector("#test").nextSibling.style.color = "red"
+ - previousElementSibling :- document.querySelector("#test").previousElementSibling.style.color = "red"
+ - previousSibling :- document.querySelector("#test").previousSibling.style.color = "red"
