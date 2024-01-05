@@ -120,4 +120,12 @@ e) insertAdjacentText
      let newElement = "This is test"
      target.insertAdjacentText("beforebegin",newElement);
 
+13) Replace & Remove Method:
+  a) replaceChild():
+  e.g. newTarget.replaceChild(target,oldText);
+  b) removeChild():
+ e.g. let newTarget = document.querySelector("#list");
+      let oldText = newTarget.children[1];
+      newTarget.removeChild(oldText);
+
       
