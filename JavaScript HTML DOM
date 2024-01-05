@@ -88,3 +88,36 @@ e.g: 1) first method
  - nextSibling :- document.querySelector("#test").nextSibling.style.color = "red"
  - previousElementSibling :- document.querySelector("#test").previousElementSibling.style.color = "red"
  - previousSibling :- document.querySelector("#test").previousSibling.style.color = "red"
+
+11) Create Method:
+ - a) Tag : createElement
+   e.g : let crateele = document.createElement("p");
+   b) Text : createTextNode
+   e.g. : let crateText = document.createTextNode("This is viraj");
+   c) Comment : createComment
+   e.g. : let cratecom = document.createComment("This is comment");
+
+12) Append Method:
+ a) appendChild - create tag & inner text & use append child for insrting text in the tag.
+   e.g - let newtag = document.createElement("h2")
+         let innerText= document.createTextNode("This is Viraj");
+         newtag.appendChild(innerText);
+         document.querySelector("#test").appendChild(newtag);
+ b) insertBefore
+  e.g - var target = document.querySelector("#test");
+        target.insertBefore(newtag,target.childNodes[0]);
+
+c) insertAdjacentElement
+ e.g : target.insertAdjacentElement("beforebegin",newtag);
+
+d) insertAdjacentHTML
+e.g : let newElement = "<h2>This is test</h2>"
+      var target = document.querySelector("#test");
+      target.insertAdjacentHTML("beforebegin",newElement);
+
+e) insertAdjacentText
+ e.g.var target = document.querySelector("#test");
+     let newElement = "This is test"
+     target.insertAdjacentText("beforebegin",newElement);
+
+      
