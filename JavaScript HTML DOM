@@ -162,4 +162,41 @@ e) insertAdjacentText
   let finel = target.contains(target);
   console.log(finel);
 
-      
+16) hasAttribute() & hasChildNodes() Method
+a) hasAttribute() Method: check that other inner attritibute available or not. 
+- <div id="list2"> </div>
+ <script type="text/javascript">
+ let target = document.querySelector("#list2");
+ let find = target.hasAttribute("class");
+ console.log(find);
+ </script>
+
+b) hasChildNodes() Method: check that other inner children available or not.
+- let target = document.querySelector("#list2");
+  let find = target.hasChildNodes();
+  console.log(find);
+
+17) isEqualNode() Method:
+- same NodeType 
+- same nodeName 
+- same NodeValue 
+- same childNodes
+- same attributes 
+- same attributes values
+e.g. :
+<ul id="list1">
+ 	<li>ashu</li>
+ 	<li>viraj</li>
+ 	<li>adi</li>
+ </ul>
+
+ <ul id="list2">
+ 	<li>viraj</li>
+ 	<li>adi</li>
+ </ul>
+<script type="text/javascript">
+ let target = document.querySelector("#list1").children[1];
+ let target2 = document.querySelector("#list2").children[0];
+ let answer = target.isEqualNode(target2);
+ console.log(answer);
+ </script>
