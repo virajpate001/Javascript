@@ -128,4 +128,26 @@ e) insertAdjacentText
       let oldText = newTarget.children[1];
       newTarget.removeChild(oldText);
 
+14) Clone Node Method 
+- e.g. 
+  <ul id="list">
+	<li>Red</li>
+	<li>Pink</li>
+	<li>White</li>
+	<li>Yellow</li>
+	<li>Black</li>
+</ul>
+
+<ul id="list2">
+	<li>Viraj</li>
+	<li>shu</li>
+	<li>kar</li>
+</ul>
+ <script type="text/javascript">
+ let clonechildren = document.querySelector("#list").children[1];
+ let newClone = clonechildren.cloneNode(true);
+ let newList = document.querySelector("#list2");
+ newList.appendChild(newClone);
+ </script>
+
       
