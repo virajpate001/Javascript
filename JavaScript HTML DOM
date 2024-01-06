@@ -150,4 +150,16 @@ e) insertAdjacentText
  newList.appendChild(newClone);
  </script>
 
+
+15) Contains() Method:
+- <ul id="list2">
+	<li>Viraj</li>
+	<li>shu</li>
+	<li id="newtest">kar</li>
+  </ul>
+- let clonechildren = document.querySelector("#list2");
+  let target= document.querySelector("#newtest");
+  let finel = target.contains(target);
+  console.log(finel);
+
       
