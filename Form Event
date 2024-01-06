@@ -1,0 +1,71 @@
+1) keydown
+2) keypress
+3) keyup
+4) focus() : we can add style and all when we focus on input and other tags 
+e.g.
+<form>
+	<input type="text" name="fName" id="fname">
+	<input type="text" name="lName" id="lname">
+</form>
+let firstName = document.querySelector("#fname");
+firstName.addEventListener("focus", function(){
+  firstName.style.background = "pink";
+ });
+
+5) blur() : remove focus using blur method 
+  lastName.addEventListener("blur", function(){
+  lastName.style.background = "";
+ });
+
+6) input
+ e.g. 
+ <form>
+	<input type="text" name="fName" id="fname">
+	<input type="text" name="lName" id="lname">
+ </form>
+ <p id="check"></p>
+let firstName = document.querySelector("#fname");
+let finalValue = document.querySelector("#check");
+firstName.addEventListener("input", function(){
+   finalValue.innerHTML = firstName.value;
+ });
+
+7) change 
+- <select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+     <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+ let acars = document.querySelector("#cars");
+ let finalValue = document.querySelector("#check");
+ acars.addEventListener("change", function(){
+   finalValue.innerHTML = acars.value;
+ });
+
+8) select - use for select value from input and show code
+- <input type="text" name="fName" id="fname">
+  let acars = document.querySelector("#fname");
+  acars.addEventListener("select", function(){
+   alert("Congratulations");
+ });
+
+
+9) submit 
+- <form>
+	<input type="text" name="fName" id="fname">
+  <input type="submit" name="submit">
+  </form>
+
+ let tForm= document.querySelector("form");
+ tForm.addEventListener("submit", function(){
+   alert("Congratulations");
+ });
+
+10) invalid
+- <input type="name" name="fName" id="fname" >
+  let acars = document.querySelector("#fname");
+
+ acars.addEventListener("invalid", function(){
+   alert("Please first name");
+ });
