@@ -1,0 +1,25 @@
+1 ) setInterval - we can set time for animation.
+
+2) clearInterval - we can stop time for animation.
+
+e.g 
+
+<div class="box"></div>
+
+<script type="text/javascript">
+ let a = 0;
+ let id = setInterval(anim, 500);
+
+ function anim(){
+ 	a = a + 10;
+
+ 	if(a == 200){
+      clearInterval(id);
+ 	} 
+ 	else{
+ 		let target = document.querySelector(".box");
+ 		target.style.marginLeft= a + 'px';
+ 	}
+ }
+
+ </script>
