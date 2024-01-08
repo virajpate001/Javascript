@@ -1,0 +1,26 @@
+BOM (Browser Object Model)
+- Browser related programing 
+- Get Width & Height of Browser Window 
+- Open & Close Browser Window.
+- Move & Resize Window.
+- Scroll to Browser Window.
+- Get URL, Hostname, Protocol of Browser Window.
+- Get History of Browser Window. 
+
+1) Window Height & Width Method:
+ a) inner Height
+  var iHeight = window.innerHeight;
+  console.log(iHeight);
+
+ b) outer Height
+  var oHeight = window.outerHeight;
+  console.log(oHeight);
+
+ c) inner Width
+  var iwidth = window.innerWidth;
+  console.log(iwidth);
+
+ d) outer Width 
+  var owidth = window.outerWidth;
+  console.log(owidth);
+
