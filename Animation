@@ -23,3 +23,23 @@ e.g
  }
 
  </script>
+
+
+3) setTimeout : We can set timeout.
+4) ClearTime : we can stop animation.
+
+E.g. <div class="box"></div>
+    <button id="stop">Stop</button>
+
+let id = setTimeout(anim, 3000);
+  let btn = document.querySelector("#stop");
+
+  function anim(){
+  	let target = document.querySelector(".box");
+
+  	target.style.width = 200 + "px";
+  }
+
+  btn.addEventListener("click", function(){
+    clearTimeout(id);
+  });
