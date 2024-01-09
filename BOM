@@ -43,3 +43,31 @@ close.addEventListener("click",function(){
     target = window.close();
   });
 
+3) Window moveBy & moveTo
+a) moveTo
+ - we can change position of window 
+ - working with absolute position 
+b) moveBy
+ - working with relative position.
+e.g.
+<button id="open">Open</button>
+<button id="moveTo">MoveTo</button>
+<button id="moveBy">moveBy</button>
+
+let btn = document.querySelector("#open");
+  let moveTo = document.querySelector("#moveTo");
+  let moveBy = document.querySelector("#moveBy");
+  let target;
+
+  btn.addEventListener("click",function(){
+    target = window.open("","target:_blank","width=500px,height=200px");
+  });
+
+  moveTo.addEventListener("click",function(){
+    target.moveTo(200,200);
+  });
+
+   moveBy.addEventListener("click",function(){
+    target.moveBy(200,200);
+  });
+
