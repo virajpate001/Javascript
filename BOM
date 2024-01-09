@@ -99,3 +99,22 @@ let btn = document.querySelector("#open");
     target.resizeTo(500,500);
   });
 
+
+5) Window ScrollBy() & scrollTo()
+a)  scrollTo() 
+- window.scrollTo(x-axis, y-axis);
+- scroll from starting point 
+b) scrollBy()
+- window.scrollBy(x-axis, y-axis);
+- scroll from current position 
+
+example : 
+
+<button id="scrollBy" style="position: fixed;top: 0;">scrollBy</button>
+
+let scrollBy = document.querySelector("#scrollBy");
+
+ scrollBy.addEventListener("click",function(){
+    window.scrollBy(0,0);
+ });
+
