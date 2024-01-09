@@ -71,3 +71,31 @@ let btn = document.querySelector("#open");
     target.moveBy(200,200);
   });
 
+4) Window ResizeBy() & ResizeTo()
+a) resizeTo():
+ - we can resize the window
+- position : absolute 
+b) resizeBy():
+ - position : relative 
+e.g :
+<button id="open">Open</button>
+<button id="resizeTo">resizeTo</button>
+<button id="resizeBy">resizeBy</button>
+
+let btn = document.querySelector("#open");
+  let resizeTo = document.querySelector("#resizeTo");
+  let resizeBy = document.querySelector("#resizeBy");
+  let target;
+
+  btn.addEventListener("click",function(){
+    target = window.open("","target:_blank","width=100px,height=100px");
+  });
+
+   resizeBy.addEventListener("click",function(){
+    target.resizeBy(500,500);
+  });
+
+  resizeTo.addEventListener("click",function(){
+    target.resizeTo(500,500);
+  });
+
