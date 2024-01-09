@@ -24,3 +24,22 @@ BOM (Browser Object Model)
   var owidth = window.outerWidth;
   console.log(owidth);
 
+2) Window Open & Close 
+ a) Open - we can open window from button
+ b) Close - we can closed window using code
+e.g. 
+ <button id="open">Open</button>
+<button id="close">Close</button>
+
+let btn = document.querySelector("#open");
+let close = document.querySelector("#close");
+let target;
+
+btn.addEventListener("click",function(){
+    target = window.open("http://thewebdecor.com/","","width=500px,height=200px,left=200px,top=500px");
+  });
+
+close.addEventListener("click",function(){
+    target = window.close();
+  });
+
