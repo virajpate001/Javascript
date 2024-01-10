@@ -144,3 +144,16 @@ let scrollBy = document.querySelector("#scrollBy");
   1) back() - history.back();
   2) forward() - history.forward();
   3) go() - history.go(1);
+
+
+8) pageYOffset & pageXOffset
+a) pageYOffset : check vertically scroll in pixels.
+ -  window.pageYOffset
+b) pageXOffset : check horizontaly scoll in pixels. 
+ -  window.pageXOffset
+
+e.g 
+window.addEventListener('scroll',function(){
+  console.clear();
+  console.log("PageYOffset :" + window.pageYOffset);
+ });
