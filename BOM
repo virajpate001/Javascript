@@ -118,3 +118,20 @@ let scrollBy = document.querySelector("#scrollBy");
     window.scrollBy(0,0);
  });
 
+
+
+6) Location Object :
+1) Location Object Properties:
+- hash
+ - host 
+ - hostname
+ - href : document.write(location.href);
+ - origin
+ - pathname 
+ - port
+ - protocol 
+ - search 
+2) Location Object Methods
+ - Assign(): We can assign url - location.assign("https://tabclothings.com.au/");
+ - Reload() : use for page reload. - location.reload();
+ - Replace () : delete back hestory - location.replace("https://tabclothings.com.au/");
