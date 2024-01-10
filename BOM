@@ -135,3 +135,12 @@ let scrollBy = document.querySelector("#scrollBy");
  - Assign(): We can assign url - location.assign("https://tabclothings.com.au/");
  - Reload() : use for page reload. - location.reload();
  - Replace () : delete back hestory - location.replace("https://tabclothings.com.au/");
+
+
+7) History Object Properties: 
+ a)length:  console.log(history.length);
+
+ b)Properties: 
+  1) back() - history.back();
+  2) forward() - history.forward();
+  3) go() - history.go(1);
