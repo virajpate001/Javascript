@@ -157,3 +157,14 @@ window.addEventListener('scroll',function(){
   console.clear();
   console.log("PageYOffset :" + window.pageYOffset);
  });
+
+
+9) offsetTop & offsetLeft
+a) offsetTop: 
+ -  check our div getting space from top
+b) offsetLeft:
+-  check our div getting space from left
+e.g
+let box = document.querySelector("#box");
+console.log("Box Top :" + box.offsetTop);
+console.log("Box Top :" + box.offsetLeft);
