@@ -1,0 +1,33 @@
+1) Arithmetic Operators
+- used to perform arithmetic on numbers.
+ --> +, -, *, / , ** , %
+ ++ -> Increment
+ -- -> Decrement
+
+2) Assignment Operators 
+-  assign values to variables.
+a) =
+b) +=
+c) -= 
+d) *= 
+e) /=
+f) %= 
+g) **=
+
+3) Comparison Operators
+-  used in logical statements to determine equality or difference between variables or values.
+ a) == -> equal to
+ b) === -> equal value and equal data type
+ c) != -> not equal
+ d) !== -> not equal value or not equal datatype
+ e) > -> greater than
+ f) < -> less than
+ g) >= -> greater than or equal to
+ f) <= -> less than or equal to
+ g) ? -> ternary operator
+
+4) Logical Operators
+ - determine the logic between variables or values.
+ a) && -> Logical Operators
+ b) || -> logical or
+ c) ! -> logical not
