@@ -1,0 +1,20 @@
+Variables are Containers for Storing Data.
+
+1) var
+- Only use var if you MUST support old browsers.
+- var always have Global Scope
+- var can be Redeclared.
+- var can be Reassigned.
+
+2) let 
+- Only use let if you can't use const 
+- let have Block Scope
+i.e. Variables declared inside a { } block cannot be accessed from outside the block
+- let cannot be Redeclared
+- let can be Reassigned.
+
+3) const 
+- Always use const if the value should not be changed
+- const cannot be Redeclared 
+- const cannot be Reassigned
+- const have Block Scope
