@@ -1,0 +1,35 @@
+JavaScript has 8 Datatypes 
+1. String : series of characters like "John Doe".
+
+2. Number : stored as decimal numbers
+  - Javascript numbers are always one type: double (64-bit floating point)
+
+3. Boolean
+ - only have two values: true or false.
+
+4. Null
+5. Bigint
+6. Undefined
+7. Symbol
+
+
+The Object Datatype
+1. An object
+ - written with curly braces {}
+ - name:value pairs, separated by commas.
+ e.g : const person = {firstName:"John", 
+                       lastName:"Doe", 
+                       age:50, 
+                       eyeColor:"blue"};
+2. An array
+ - arrays are written with square brackets.
+ - Array items are separated by commas.
+ e.g : const cars = ["Saab", "Volvo", "BMW"];
+
+3. A date
+
+
+
+The typeof Operator
+typeof "John" :  // Returns "string"
+- The typeof operator returns the type of a variable or an expression
