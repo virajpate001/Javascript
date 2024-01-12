@@ -1,0 +1,11 @@
+HTML events are "things" that happen to HTML elements.
+An HTML event can be something the browser does, or something a user does.
+E.g : An HTML button was clicked
+
+Common HTML Events
+a) onclick
+b) onchange
+c) onmouseover
+d) onmouseout
+e) onkeydown
+f) onload
