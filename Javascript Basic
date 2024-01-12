@@ -1,0 +1,28 @@
+1) JavaScript is the programming language of the Web.
+2) JavaScript Can Change HTML Content
+3) JavaScript Can Change HTML Attribute Values
+4) JavaScript Can Change HTML Styles (CSS)
+5) JavaScript code is inserted between <script> and </script> tags.
+6) JavaScript can "display" data in different ways:
+ a) innerHTML.
+ b) document.write()
+ c) window.alert()
+ d) console.log()
+
+7) JavaScript Keywords
+ a) var : Declares a variable
+ b) let : Declares a block variable
+ c) const : Declares a block constant
+ d) if: block of statements to be executed on a condition
+ e) switch : block of statements to be executed in different cases
+ f) for : block of statements to be executed in a loop
+ g) function : Declares a function
+ h) return : Exits a function
+ i) try : Implements error handling to a block of statements
+
+8) variables: used to store data values
+
+9) JavaScript is Case Sensitive
+  - lastName
+
+10)
