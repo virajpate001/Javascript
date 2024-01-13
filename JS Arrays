@@ -1,0 +1,56 @@
+An array is a special variable, which can hold more than one value.
+
+e.g. : let cars = ["Saab", "Volvo", "BMW"];
+
+1) create an array, and then provide the elements
+const cars = [];
+cars[0]= "Saab";
+cars[1]= "Volvo";
+cars[2]= "BMW";
+
+2) creates an Array using Keyword "new". 
+let boys = new Array("Viraj", "Aditya", "Ashutosh");
+
+3) Accessing Array Elements
+- You access an array element by referring to the index number.
+e.g. let cars = ["Saab", "Volvo", "BMW"];
+     let x = cars[1] ;
+     console.log(x);
+
+4) Changing an Array Element
+ - we can change values using index number
+ e.g. let cars = ["Saab", "Volvo", "BMW"];
+      cars[0] = "Maruti";
+      console.log(cars);
+
+5) Converting an Array to a String
+  let cars = ["Saab", "Volvo", "BMW"];
+  let target = document.querySelector("#cars");
+  target.innerHTML = cars.toString();
+
+6) Arrays are Objects 
+a) Arrays use numbers to access its "elements". In this example, person[0] returns John:
+  - const person = ["John", "Doe", 46];
+
+b) Objects use names to access its "members". In this example, person.firstName returns John:
+  - const person = {firstName:"John", lastName:"Doe", age:46};
+
+7) Adding Array Elements 
+- The easiest way to add a new element to an array is using the push() method
+e.g.  const fruits = ["Banana", "Orange", "Apple"];
+  fruits.push("Lemon");
+
+8) The Difference Between Arrays and Objects
+  - arrays use numbered indexes.   
+  - objects use named indexes.
+
+a) When to Use Arrays. When to use Objects
+ - You should use objects when you want the element names to be strings (text).
+ - You should use arrays when you want the element names to be numbers.
+
+9) How to Recognize an Array
+Solution 1:
+ const points = ["viraj", "Pate"];
+ let x = Array.isArray(points);
+ console.log(x);
+ 
