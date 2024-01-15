@@ -1,0 +1,33 @@
+The JavaScript Math object allows you to perform mathematical tasks on numbers.
+
+1) Math Properties
+- JavaScript provides 8 mathematical constants that can be accessed as Math properties
+Math.E        // returns Euler's number
+Math.PI       // returns PI
+Math.SQRT2    // returns the square root of 2
+Math.SQRT1_2  // returns the square root of 1/2
+Math.LN2      // returns the natural logarithm of 2
+Math.LN10     // returns the natural logarithm of 10
+Math.LOG2E    // returns base 2 logarithm of E
+Math.LOG10E   // returns base 10 logarithm of E
+
+2) Math Methods
+- The syntax for Math any methods is : Math.method(number)
+A) Number to Integer
+  - There are 4 common methods to round a number to an integer:
+    a) Math.round(x) //Returns x rounded to its nearest integer
+    b) Math.ceil(x)  //Returns x rounded up to its nearest integer
+    c) Math.floor(x) //Returns x rounded down to its nearest integer 
+    e) Math.trunc(x) 
+
+JavaScript Math Methods
+1) abs(x) : Returns the absolute value of x
+2) acos(x) : Returns the arccosine of x, in radians
+3) acosh(x) : Returns the hyperbolic arccosine of x
+4) asin(x) : Returns the arcsine of x, in radians
+5) asinh(x) : Returns the hyperbolic arcsine of x
+6) atan(x) : 	Returns the arctangent of x as a numeric value between -PI/2 and PI/2 radians
+
+Note : check this for more https://www.w3schools.com/js/js_math.asp 
+  
+    
