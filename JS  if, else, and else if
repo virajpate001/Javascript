@@ -1,0 +1,17 @@
+Conditional Statements:
+- when you write code, you want to perform different actions for different decisions.
+
+In JavaScript we have the following conditional statements:
+a) Use "if" to specify a block of code to be executed, if a specified condition is true.
+b) Use "else" to specify a block of code to be executed, if the same condition is false
+c) Use "else if" to specify a new condition to test, if the first condition is false
+d) Use "switch" to specify many alternative blocks of code to be executed. 
+
+e.g.
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
