@@ -1,0 +1,8 @@
+Template String / Template Literals
+- provide a way to embed expressions inside string literals.
+- They are enclosed by backticks (`${value}`) 
+- more readable 
+
+Example: 
+let name = "Viraj";
+document.write(`Hello ${name}`);
