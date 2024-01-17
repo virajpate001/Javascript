@@ -1,0 +1,30 @@
+- In JavaScript, the rest operator (...) is used to represent an indefinite number of arguments as an array. 
+- It allows you to collect the remaining arguments of a function into a single array variable. 
+- The rest operator is particularly useful when you have a function that can accept a variable number of arguments.
+
+
+Example 1) without rest operator
+
+sum(20,30,50);
+
+function sum(){
+   let value = 0;
+    for(let i in arguments){
+      value += arguments[i];
+    }
+     document.write(value + "<br>");
+ }   
+
+
+Example 2) with rest operator
+
+sum("Viraj", 20,30,50);
+
+function sum(name,...args){
+    let value = 0;
+    for(let i in args){
+      value += args[i];
+    }
+    document.write(value + "<br>");
+    document.write(`Hello ${name}`);
+   }
