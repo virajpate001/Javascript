@@ -1,0 +1,12 @@
+An arrow function in JavaScript is a concise way to write anonymous functions. 
+
+Syntax: 
+() => {
+  console.log("Hello!");
+};
+
+Example : 
+let welcome = (name,lname) =>{
+  return `${name} ${lname}` ;
+ }
+document.write(`Hello ${welcome("Viraj","Pate")}`);
