@@ -1,0 +1,42 @@
+1) Object Literal
+let name = "viraj";
+let age = 18;
+
+let person = {
+name,
+age,
+}
+document.write(person.name);
+
+
+2) Use Variable as a propertyname 
+let n = "name";
+let person = {
+[n] : "Viraj",
+age : 18,
+}
+console.log(person.name);
+
+3) New Function Syntax 
+let n = "name"; 
+let person = {
+[n] : "Viraj",
+age : 18,
+myDetail(){
+return `${this.name} ${this.age}`;
+ },
+}
+console.log(person.myDetail());
+
+4) using function argument 
+
+let name = "Viraj";
+let village = "Diveagar";
+function addmition(abc,pqr){
+ return {abc, pqr};
+}
+console.log(addmition(name,village));
+
+
+
+
