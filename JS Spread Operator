@@ -1,0 +1,25 @@
+The spread operator (...) in JavaScript is a "feature" that allows you to spread elements
+of an iterable (like an array or a string) into individual elements.
+
+- spread operator se "array" or "string" ki values ko alag alag karta he.
+
+1) Expanding Arrays:
+- You can use the spread operator to expand elements of one array into another.
+example: 
+let x = ["Viraj", "Aditya", "Ashu", "Sanmay"];
+let y = [...x, "Karan", "Sahil"];
+console.log(y);
+
+2) Copying Arrays:
+- The spread operator is used to create a shallow copy of an array.
+let x = ["Viraj", "Aditya", "Ashu", "Sanmay"];
+let y = [...x];
+console.log(y);
+
+3) Passing Function Arguments:
+- It can be used to pass elements of an array as arguments to a function:
+     let x = [10, 20 ,50, 60];
+     function main(a,b,c,d){
+       return a+b+c+d;
+     }
+    document.write(`${main(...x)}`);
