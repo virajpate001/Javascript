@@ -31,3 +31,17 @@ exapmle:
      let y = [20.50,45,56];
      let z = [...x, ...y];
      document.write(z);
+
+5) Object Spread:
+- Similar to arrays, the spread operator can be used with objects:
+     let x = {
+      name : "Viraj",
+      age : 25,
+     }
+
+     let y = {
+      ...x,
+      vilage: "Diveagar",
+     }
+
+     console.log(y.name);
