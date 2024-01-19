@@ -23,3 +23,11 @@ console.log(y);
        return a+b+c+d;
      }
     document.write(`${main(...x)}`);
+
+4) Concatenating Arrays:
+- You can use the spread operator to concatenate arrays:
+exapmle: 
+     let x = [12,32,45,50];
+     let y = [20.50,45,56];
+     let z = [...x, ...y];
+     document.write(z);
