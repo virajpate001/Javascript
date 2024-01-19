@@ -1,0 +1,46 @@
+Object destructuring is a feature in JavaScript that allows you to extract values from objects and assign them to variables in a more concise way.
+
+1) Basic Object Destructuring:
+let obj = {
+      name : "Viraj",
+      lname : "pate",
+      age : 25 
+     }
+let{name, lname, age} = obj;
+console.log(age);
+
+2) Renaming Variables:
+const user = { username: 'john_doe', email: 'john@example.com' };
+const { username: userName, email: userEmail } = user;
+console.log(userName);   // Output: john_doe
+console.log(userEmail);  // Output: john@example.com
+
+3) Default Values:
+- You can provide default values for variables in case the property is undefined:
+ const settings = { theme: 'light' };
+ const { theme, fontSize = 14 } = settings;
+ console.log(theme);    // Output: light
+ console.log(fontSize); // Output: 14 (default value)
+
+4) Nested Destructuring:
+ - You can destructure nested objects:
+ const person = {
+  name: 'John',
+  age: 30,
+  address: { city: 'Example City', country: 'USA' }
+};
+const { name, address: { city, country } } = person;
+
+console.log(name);   // Output: John
+console.log(city);   // Output: Example City
+console.log(country);// Output: USA
+
+5) Rest Syntax:
+const person = { firstName: 'John', lastName: 'Doe', age: 30, gender: 'male' };
+const { firstName, lastName, ...otherDetails } = person;
+console.log(firstName);      // Output: John
+console.log(lastName);       // Output: Doe
+console.log(otherDetails);   // Output: { age: 30, gender: 'male' }
+
+
+
