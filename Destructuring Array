@@ -1,6 +1,6 @@
 Destructuring is a feature in JavaScript that allows you to extract values from arrays or objects and assign them to variables in a more concise way. 
 
-E.g. 
+1) Basic Array Destructuring: 
 let student = ["Viraj", "Pate", 18];
 let [name, lname, age] = student;
 console.log(name);
@@ -21,3 +21,20 @@ function student([name, lname, age]){
  console.log(lname);
  console.log(age);
 }
+
+4) Skipping Elements:
+const colors = ['red', 'green', 'blue', 'yellow'];
+const [firstColor, , , fourthColor] = colors;
+console.log(firstColor);  // Output: red
+console.log(fourthColor); // Output: yellow
+
+5) Rest Syntax:
+const fruits = ['apple', 'orange', 'banana', 'grape'];
+const [firstFruit, ...restOfFruits] = fruits;
+console.log(firstFruit);    // Output: apple
+console.log(restOfFruits);  // Output: ['orange', 'banana', 'grape']
+
+
+
+Array destructuring is a powerful feature that enhances the readability and conciseness of your code when working with arrays.
+
