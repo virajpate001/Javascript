@@ -1,0 +1,23 @@
+Destructuring is a feature in JavaScript that allows you to extract values from arrays or objects and assign them to variables in a more concise way. 
+
+E.g. 
+let student = ["Viraj", "Pate", 18];
+let [name, lname, age] = student;
+console.log(name);
+console.log(lname);
+console.log(age);
+
+2) Nested array example :
+let student = ["Viraj", "Pate", 18, [86,"A"],];
+let [name, lname, age, [marks, grade],] = student;
+console.log(marks);
+console.log(grade);
+console.log(age);
+
+3) Using Method:
+student(["Viraj", "Pate", 18]);
+function student([name, lname, age]){
+ console.log(name);
+ console.log(lname);
+ console.log(age);
+}
