@@ -1,0 +1,21 @@
+Class Inheritance : 
+- Class Inheritance provides flexibility to the child class to reuse the methods and variables of a parent class.
+- To create a class inheritance, use the extends keyword.
+
+Example:
+class school{ // Parent Class
+        constructor(name){ // Parent class constructor method 
+          this.sname = name;
+        }
+
+        history(){ // Parent class Prototype method
+          console.log(`${this.sname} school`)
+        }
+}
+
+class student extends school{ // Child Class & inherits school class      
+        
+} 
+
+let x = new student("Viraj"); // student class object call
+x.history(); // Prototype method call 
