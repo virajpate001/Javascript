@@ -19,3 +19,33 @@ class student extends school{ // Child Class & inherits school class
 
 let x = new student("Viraj"); // student class object call
 x.history(); // Prototype method call 
+
+
+Important: 
+super keyword :
+-  super keyword is used in the context of classes and inheritance.
+-  It allows a child class to call methods or access properties from its Parent class. 
+
+Example: 
+in above Inheritance Example add same method (history) & call both method (history).
+
+class school{
+        constructor(name){
+          this.sname = name;
+        }
+
+        history(){
+          console.log(`${this.sname} school`)
+        }
+}
+
+class student extends school{    
+          history(){
+          console.log(`${this.sname} student`)
+          super.history();
+          }
+ } 
+
+let x = new student("Viraj");
+x.history();
+
