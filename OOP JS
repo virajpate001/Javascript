@@ -1,0 +1,80 @@
+OOP : Object Oriented Programing 
+- OOP is Coding Methodology / Style / Pattern
+- Code more modular and reusable.
+- Well Organized 
+- Easier to debug 
+- Best for medium to large website projects. 
+
+1) Class & Object 
+ A) Class : 
+   - JavaScript Classes are templates for JavaScript Objects.
+   - Use the keyword "class" to create a class.
+   - in a class have "Properties" & "Methods" declare in the class.
+     a) Property (variables)
+       e.g. let a; 
+            let b;
+     b) Methods
+      sum(){ 
+       c= a + b;
+      return c;   
+     }
+
+B) Object : 
+ - Once you have a class, you can create objects  from it using the new keyword
+ - let x = new hello();
+
+
+Example: 
+ class hello{ // class
+      method1(){
+        document.write("This is first method");
+      }
+}
+let x = new hello(); //object 
+x.method1();
+
+
+2) Types of Methods :
+ A) Constructor 
+   - Constructor functions in JavaScript are used to create objects with a consistent structure and behavior. 
+   - when we create object then automaticaly Constructor method will call.
+   - e.g
+     constructor(){
+      console.log("Hello");
+     }
+ B) Prototypes 
+    - jab tak ham Prototypes method call nahi karte tab tak Prototypes methods call nahi hote.
+    - e.g. 
+      message(){
+       console.log("Hello")
+      }
+ C) Static
+   - static method ham object ke bina call karte sakte he. 
+   - class name lagakr call kar sakte he. 
+   - e.g. static name(){
+     console.log("Hello")
+     }
+    
+ 
+
+Example : 
+class hello{
+    constructor (name,age){ // constructor method
+        this.studentname = name;
+         this.studentage = age;
+     }
+
+     method1(){ // Prototype method 
+        document.write(`${this.studentname} ${this.studentage}`);
+      }
+
+    static stmethod(){ // static method
+        document.write("This is static method");
+       }
+
+ }
+
+  let x = new hello("Viraj", "Pate"); //object 
+  x.method1(); // Prototype method call
+
+  hello.stmethod(); // static method call
