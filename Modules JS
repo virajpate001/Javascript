@@ -1,0 +1,23 @@
+- Modules help organize code by breaking it into smaller, manageable pieces, making it easier to understand, maintain, and reuse. 
+- JavaScript introduced built-in support for modules through the "import" and "export" keywords.
+
+A) How to work with Modules ? 
+ - Create "file1.js" file & "file2.js"
+
+ a) file1.js code
+    export let name = "Viraj"; // variable 
+
+    export function hello{} // function 
+
+    export class user{} // class 
+
+ b) file2.js code
+    import {name, hello, user} from './file1.js'
+
+    console.log(name) // print variable 
+
+    hello();
+
+    let a = new user(); 
+
+    
