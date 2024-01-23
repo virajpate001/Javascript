@@ -1,0 +1,49 @@
+A Promise in JavaScript is an object that represents the eventual "completion" or "failure" of an asynchronous operation and its resulting value.
+
+The Promise object has three states:
+1) Pending: The initial state; the promise is neither fulfilled nor rejected.
+2) Fulfilled: The operation completed successfully, and the promise has a resulting value.
+3) Rejected: The operation failed, and the promise has a reason for the failure.
+
+Example 1)
+let status = true; 
+
+     let prom = new Promise((resolve, reject)=>{
+        if(status){
+          resolve("I am successful");
+        }
+        else{
+           reject("I am Failed");
+        }
+     });
+
+console.log(prom);
+
+
+Example 2) above updated code
+
+//create funtion & pass value true or false
+    function promtest(status){
+        return new Promise((resolve, reject)=>{
+        if(status){
+          resolve("I am successful");
+        }
+        else{
+           reject("I am Failed");
+        }
+     });
+  }
+
+// create onfulfilment & onRejection Variable 
+     let onfulfilment = (result) => {
+      console.log(result);
+     }
+
+    let onRejection = (error) => {
+      console.log(error);
+    }
+
+//call function 
+promtest(false).then(onfulfilment);
+promtest(false).catch(onRejection);
+
