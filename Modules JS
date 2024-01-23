@@ -5,19 +5,39 @@ A) How to work with Modules ?
  - Create "file1.js" file & "file2.js"
 
  a) file1.js code
-    export let name = "Viraj"; // variable 
+     let name = "Viraj"; // variable 
 
-    export function hello{} // function 
+     function hello{} // function 
 
-    export class user{} // class 
+     class user{} // class 
+
+   export (name, hello, user);
 
  b) file2.js code
     import {name, hello, user} from './file1.js'
 
     console.log(name) // print variable 
 
-    hello();
+    hello(){
+     console.log("Testing")
+    };
 
     let a = new user(); 
 
+c) add <script> tag in html file
+ - <script type="module" src="./file2.js"></script>
+
+Note: use LIVE Server for modules Example. 
+
+
+d) We can create rename of imported function 
+- Example:
+  import {name, hello as us, user} from './file1.js'
+  console.log(us("Viraj"); 
+
+E) We can use import all varible , function & classes using "*" 
+- import * as test from './file1.js'
+  console.log(test.name);
+
+F) We can create multiple js file and use we can use code. 
     
