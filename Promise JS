@@ -76,3 +76,32 @@ promtest(true).then(onfulfilment).catch(onRejection);
 
 
 
+Example 4) real time example using jquery 
+
+function promtest(){
+
+return new Promise((resolve, reject)=>{
+         console.log("Fetching Data");
+        setTimeout(()=>{
+          $.get("https://jsonplaceholder.typicode.com/posts",function(data){
+            console.log(data);
+          }).fail(err => {
+            result("Fail to load json");
+          })
+
+        },2000)
+     });
+     }
+
+     let onfulfilment = (result) => {
+      console.log(result);
+     }
+
+    let onRejection = (error) => {
+      console.log(error);
+    }
+
+promtest(true).then(onfulfilment).catch(onRejection);
+
+
+
