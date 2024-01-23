@@ -44,6 +44,35 @@ Example 2) above updated code
     }
 
 //call function 
-promtest(false).then(onfulfilment);
-promtest(false).catch(onRejection);
+promtest(true).then(onfulfilment).catch(onRejection);
+
+
+Example 3) updated in above code "Pending" used 
+
+function promtest(status){ 
+        return new Promise((resolve, reject)=>{
+         console.log("Fetching Data");
+        setTimeout(()=>{
+          if(status){
+          resolve("I am successful");
+        }
+        else{
+           reject("I am Failed");
+        }
+
+        },2000)
+     });
+     }
+
+     let onfulfilment = (result) => {
+      console.log(result);
+     }
+
+    let onRejection = (error) => {
+      console.log(error);
+    }
+
+promtest(true).then(onfulfilment).catch(onRejection);
+
+
 
