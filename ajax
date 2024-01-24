@@ -1,0 +1,57 @@
+- AJAX stands for "Asynchronous JavaScript and XML," 
+- it is commonly used to refer to any asynchronous request made by JavaScript. 
+- It is a technique used in web development to make asynchronous HTTP requests to a server from the client-side. 
+- Web pages to update content dynamically without requiring a full page reload.
+
+- To use AJAX in JavaScript, you typically make use of the "XMLHttpRequest" object or the newer "fetch API".
+
+- AJAX just uses a combination of:
+ a) A browser built-in XMLHttpRequest object (to request data from a web server)
+ b) JavaScript and HTML DOM (to display or use the data)
+
+Steps:
+
+1) Create an XMLHttpRequest Object: 
+ - let xhr = new XMLHttpRequest(); 
+
+2) Send a Request :
+ - xhr.open("GET", "https://api.example.com/data", true);
+   xhr.send();
+
+3) Create "onreadystatechange"
+ - xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4 && xhr.status == 200) {
+    // The request is complete, and the response is successful
+    console.log(xhr.responseText);
+  }
+};
+
+
+Example 1)
+
+<p id="demo">Let AJAX change this text.</p>
+<button type="button" onclick="loadDoc()">Change Content</button>
+
+<script>
+ 
+ function loadDoc(){
+ 
+  let xhr = new XMLHttpRequest();  //Create an XMLHttpRequest Object
+  
+  
+  xhr.onreadystatechange = function (){  //Create "onreadystatechange"
+    
+    if(xhr.readyState == 4 && xhr.status == 200){
+     console.log(xhr.responseText);
+     
+     document.querySelector("#demo").innerHTML = xhr.responseText;
+    }
+  
+  }
+ 
+  xhr.open("GET", "https://jsonplaceholder.typicode.com/comments", true); // Send a Request
+  xhr.send();
+  
+ 
+ }
+
