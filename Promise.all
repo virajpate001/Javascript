@@ -1,0 +1,29 @@
+Promise.all is a method in JavaScript that takes an array of Promises (or values) and returns a single Promise.
+-  If any of the input Promises is rejected, the resulting Promise from Promise.all is also rejected, and the reason for rejection is the reason of the first rejected Promise.
+
+Example 1 ) 
+
+let p1 = new Promise((resolve, reject)=>{ //first promise
+        setTimeout((result,error)=>{
+          console.log("first promis resolve")
+          resolve(12);
+        }, 1 * 1000);
+      });
+
+let p2 = new Promise((resolve, reject)=>{  //second promise
+        setTimeout((result,error)=>{
+          console.log("second promis resolve")
+          resolve(24);
+        }, 2 * 1000);
+      });
+
+let p3 = new Promise((resolve, reject)=>{ //third promise
+        setTimeout((result,error)=>{
+          console.log("third promis reject")
+         resolve(36);
+        }, 3 * 1000);
+      });
+
+Promise.all([p1,p2,p3]).then((result)=>{
+ console.log(`${result}`)
+}).catch((reject)=>{console.log(reject)});
