@@ -1,4 +1,5 @@
-Promise.all is a method in JavaScript that takes an array of Promises (or values) and returns a single Promise.
+- Promise.all is a method in JavaScript that takes an array of Promises (or values) and returns a single Promise.
+- We can call then & catch method in one time in Promise.all.
 -  If any of the input Promises is rejected, the resulting Promise from Promise.all is also rejected, and the reason for rejection is the reason of the first rejected Promise.
 
 Example 1 ) 
