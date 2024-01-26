@@ -40,3 +40,43 @@ Example 2) Using Json file (online json file)
       });
 
 
+Example 3) User Add data using form
+
+<form action="">
+    <input type="text" name="" id="name">
+    <input type="email" id="email">
+    <input type="text" id="body">
+    <input type="submit" name="submit" value="submit" id="btn">
+  </form>
+
+<script>
+
+    let btnSubmit = document.querySelector("#btn");
+
+    btnSubmit.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      let obj = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        body: document.getElementById("body").value,
+      }
+
+      fetch("https://jsonplaceholder.typicode.com/posts/1/comments", {
+        method: "POST",
+        body: JSON.stringify(obj),
+        headers: {
+          'Content-type': 'application/json;charset=UTF-8'
+        },
+      })
+        .then((response) => {
+          return response.json();
+        })
+        .then((result) => {
+          console.log(result);
+        });
+
+
+    });
+  </script>
+
