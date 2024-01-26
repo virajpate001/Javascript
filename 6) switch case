@@ -1,0 +1,56 @@
+- The switch statement in JavaScript is a control flow structure that allows you to compare the value of an expression against multiple possible case values.
+-  It provides a concise way to write multiple if-else statements.
+
+Syntax:
+
+switch (expression) {
+  case value1:
+    // code to be executed if expression matches value1
+    break;
+  case value2:
+    // code to be executed if expression matches value2
+    break;
+  // additional cases as needed
+  default:
+    // code to be executed if expression doesn't match any case
+}
+
+
+Example 1) Get current day name
+
+let day = new Date().getDay();
+    
+    switch (day) {
+      case 1:
+        document.write("Monday");
+        break;
+      
+      case 2:
+       document.write("Tue");
+       break;
+       
+       case 3:
+       document.write("Wed");
+       break;
+
+       case 4:
+       document.write("Thu");
+       break;
+
+       case 5:
+       document.write("Fri");
+       break;
+
+       case 6:
+       document.write("Sat");
+       break;
+
+       case 7:
+       document.write("Sun");
+       break;       
+
+      default:
+        document.write("Please select day");
+        break;
+    }
+</script>
