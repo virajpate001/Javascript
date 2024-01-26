@@ -1,0 +1,30 @@
+- "fetch" refers to the Fetch API,
+- which is a modern, powerful, and flexible mechanism for making network requests. 
+- It provides a cleaner and more powerful alternative to the older XMLHttpRequest.
+
+Syntax:
+
+fetch(url)
+  .then(response => {
+    // Handle the response
+    return response.json(); // or response.text(), etc.
+  })
+  .then(data => {
+    // Handle the data
+  })
+  .catch(error => {
+    // Handle errors
+  });
+
+Example 1) 
+let out = document.querySelector("#test");
+    fetch("test/file.txt")
+      .then((response) => { return response.text() }) // Handle the response
+      .then((result) => out.innerHTML = result) // Handle the data
+      .catch((error) => {     // Handle errors
+        document.write("Error meesaage");
+      });
+
+
+
+
