@@ -1,0 +1,21 @@
+- iterator is an object that provides a way to access the elements of a collection (like an array or set) one at a time, allowing you to iterate over the items.
+
+Example 1)
+let x = [100,200,300,400];
+let iter = x[Symbol.iterator]();
+iter.next();
+console.log(iter.next().value);
+console.log(iter.next().value);
+console.log(iter.next().value);
+console.log(iter.next().done);
+
+
+Example 2) 
+let x = [100,200,300,400,500,600];
+let iter = x[Symbol.iterator]();
+let result =  iter.next();
+
+while(!result.done){
+ console.log(result.value);
+ result = iter.next();
+ }
