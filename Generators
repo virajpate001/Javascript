@@ -1,0 +1,71 @@
+-Generators in JavaScript are a special type of function.
+-that can be paused and resumed, allowing you to control the flow of execution manually. 
+-They are defined using the function* syntax. 
+-Generators use the "yield" keyword to produce a sequence of values lazily, one at a time, and they allow you to write asynchronous code in a more synchronous-looking style.
+
+Example 1) 
+function *friends(){
+      console.log("Viraj");
+       yield "pause"
+      console.log("Aditya");
+      yield "pause"
+      console.log("Ashu");
+      yield "pause"
+    }
+
+    let list = friends();
+    console.log(list.next());
+    console.log(list.next());
+    console.log(list.next());
+    console.log(list.next());
+    console.log(list.next().done);
+
+
+
+Example 2)
+function *friends(){
+      console.log("Viraj");
+      yield "pause"
+      console.log("Aditya");
+      yield "pause"
+      console.log("Ashu");
+      yield "pause"
+    }
+
+    let list = friends();
+   
+   for(let value of list){
+     console.log(value);
+   }
+
+  
+Example 3)
+function *friends(){
+      let nextNum = 300;
+
+      while(true){
+        yield(nextNum++);
+      }
+    }
+
+    let list = friends();
+
+    for(let val of list){
+     if (val > 310) {
+       break;
+     }
+     console.log(val);
+    }
+
+Example 4) 
+function *friends(){
+      yield 50;
+      yield* ["Viraj", "Ashu", "Aditya"]
+    }
+
+    let list = friends();
+    
+    console.log(list.next().value);
+    console.log(list.next().value);
+    console.log(list.next().value);
+    console.log(list.next().value);
