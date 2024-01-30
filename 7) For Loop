@@ -1,0 +1,21 @@
+- Loops can execute a block of code a number of times.
+- if you want to run the same code over and over again, each time with a different value.
+
+Example 1) Without Loop 
+
+ const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+    console.log(cars[0]);
+    console.log(cars[1]);
+    console.log(cars[2]);
+    console.log(cars[3]);
+    console.log(cars[4]);
+    console.log(cars[5]);
+
+Example 2) With Loop
+
+const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+for(let i = 0; i < cars.length ; i++){
+       console.log(cars[i]);
+    }
