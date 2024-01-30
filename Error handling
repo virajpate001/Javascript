@@ -18,7 +18,55 @@ try {
   console.log("This will always be executed");
 }
 
-2) Async/Await Error Handling:
+
+2) Name, Message , stack
+Example 1) 
+try{
+     blallbl;
+  }catch(error){
+   console.error(error.name);
+   console.error(error.message);
+   console.error(error.stack);
+  }
+
+
+3) Types of Errors 
+ a) EvalError
+ b) RangeError 
+ c) ReferenceError 
+ d) SyntaxError 
+ e) TypeError
+ f) URIError
+ g) AggregateError
+
+Example 1) 
+
+try{
+     blallbl;
+  }catch(error){
+    
+    if(error instanceof ReferenceError){
+      console.log("ReferenceError");
+    }else if(error instanceof TypeError){
+      console.log("TypeError");
+    }
+     else{
+      console.log("Other Error");
+     }
+  }
+
+4) Custom Errors:
+You can throw custom errors using the throw statement. 
+
+try {
+  throw new Error("This is a custom error");
+} catch (customError) {
+  console.error(customError.message);
+}
+
+
+
+5) Async/Await Error Handling:
 - When working with asynchronous code using async functions and await, you can use try, catch, and finally as well.
 
 Example 1) 
