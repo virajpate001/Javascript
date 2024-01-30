@@ -1,0 +1,7 @@
+Strict mode is a feature in JavaScript that show the small error from the code.
+
+Example 1)
+
+"use strict";
+ a = 10;
+console.log(a);
