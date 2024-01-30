@@ -1,0 +1,20 @@
+The JavaScript for in statement loops through the properties of an Object:
+
+Syntax: 
+
+for (key in object) {
+  // code block to be executed
+}
+
+Example 1) Without For in loop
+let person = {fname:"Viraj", lname:"Pate", age:25};
+console.log(person.fname);
+console.log(person.lname);
+console.log(person.age);
+
+
+Example 2) With For in loop
+let person = {fname:"Viraj", lname:"Pate", age:25};
+for(let key in person){
+   console.log(`${key} : ${person[key]} `);
+  }
