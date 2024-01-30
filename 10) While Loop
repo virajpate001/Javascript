@@ -4,9 +4,10 @@
 Syntax:
 while (condition) {
   // code block to be executed
+ increment/decrement
 }
 
-Example 1) I Want print my 5 times
+Example 1) I Want print my name 5 times
 
 let name = "Viraj";
 console.log(name);
