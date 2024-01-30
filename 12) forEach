@@ -1,0 +1,30 @@
+JavaScript, the forEach loop is used to iterate over elements in an array, executing a provided function once for each element.
+
+Example 1)
+const numbers = [1, 2, 3, 4, 5];
+// Using forEach to iterate over elements in the array
+numbers.forEach(function (number) {
+  console.log(number);
+});
+
+Example 2) I want each input show border red if user do not enter value in input box.
+
+ <input type="text" name="name" class="fileds">
+ <input type="text" name="lname" class="fileds">
+
+ <script>
+        let inputFields = document.querySelectorAll(".fileds");
+
+        inputFields.forEach((inputField) => {
+            inputField.addEventListener("blur", (event) => {
+               
+               if (event.target.value.trim() !== "") {
+                    // Remove the "bb" class if the input has a value
+                    event.target.classList.remove("bb");
+                } else {
+                    // add the "bb" class if the input is empty
+                    event.target.classList.add("bb");
+                }
+            });
+        });
+    </script>
