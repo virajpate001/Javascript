@@ -51,7 +51,7 @@ e.g. document.querySelector("#test").classList = "viraj";
 
 9) addEventListener()
 e.g: 1) first method 
-         document.querySelector("#test").onclick = abc;
+         document.querySelector("#test").onclick = abc();
          function abc(){
          document.querySelector(".para").style.color = "#fff";
           }
