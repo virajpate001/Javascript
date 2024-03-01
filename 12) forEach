@@ -27,4 +27,28 @@ Example 2) I want each input show border red if user do not enter value in input
                 }
             });
         });
-    </script>
+    </script
+
+
+Example 3) Change List Text Click On Each List 
+<ul id="list">
+    <li>OFF</li>
+    <li>OFF</li>
+    <li>OFF</li>
+    <li>OFF</li>
+    <li>OFF</li>
+    <li>OFF</li>
+</ul>
+
+<script>
+
+const listItems = document.querySelectorAll("#list li");
+console.log(listItems);
+
+if(listItems.length > 1){
+    listItems.forEach(item => item.addEventListener('click', (event) =>{
+        return event.target.innerText = 'ON';
+    } ));
+}
+
+</script>
